@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const Doc = (props) => {
+const Doc = ({title, content}) => {
   const [disabled, setDisabled] = useState(true);
 
   return (
     <div>
-      <h1 className="title">{props.title}</h1>
+      <h1 className="title">{title}</h1>
       <div
         className="content"
         style={{ overflowY: "scroll", width: "300px", height: "300px" }}
@@ -20,7 +20,7 @@ const Doc = (props) => {
           }
         }}
       >
-        {props.content}
+        {content}
       </div>
       <button disabled={disabled}>I Agree</button>
     </div>

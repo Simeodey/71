@@ -7,8 +7,8 @@ function App(){
 
   useEffect(()=>{
     fetch("https://jaspervdj.be/lorem-markdownum/markdown.txt")
-    .then((response)=>response.text())
-    .then((text)=>{
+    .then(response=>response.text())
+    .then(text=>{
       setText(text);
     })
     .catch(console.error)  },[]);

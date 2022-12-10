@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Doc = ({title, content}) => {
+const Document = ({title, content}) => {
   const [disabled, setDisabled] = useState(true);
 
   return (
@@ -18,7 +18,7 @@ const Doc = ({title, content}) => {
           ) {
             setDisabled(false);
           }
-        }}
+        }}d
       >
         {content}
       </div>
@@ -27,4 +27,4 @@ const Doc = ({title, content}) => {
   );
 };
 
-export default Doc;
+export default Document;

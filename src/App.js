@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Doc from "./Doc";
+import Document from "./Document";
 
 function App(){
  const [text,setText] = useState("");
@@ -22,7 +22,7 @@ function App(){
       </section>
       <div class="container is-fullhd">
         <div class="notification">
-          <Doc title = "Terms and Conditions" content = {text} ></Doc>
+          <Document title = "Terms and Conditions" content = {text} ></Document>
         </div>
       </div>
     </div>
